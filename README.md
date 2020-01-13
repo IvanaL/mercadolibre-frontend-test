@@ -14,7 +14,7 @@ For Backend run command:
 `node app.js`
 
 For Frontend run command:
-`npms start`
+`npm start`
 
 ### Technologies
 
