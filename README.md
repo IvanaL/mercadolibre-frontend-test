@@ -5,7 +5,7 @@ Test Front End Mercado Libre
 ## Getting Started
 
 Clone Repository
-xxxxxxxxxxx
+https://github.com/IvanaL/mercadolibre-frontend-test.git
 
 Install dependencies
 `npm install`
@@ -23,6 +23,6 @@ Express v.4.17.1
 
 ## Author
 
-* **Ivana Leikin** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Ivana Leikin**
 
 

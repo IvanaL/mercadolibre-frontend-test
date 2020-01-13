@@ -29,9 +29,10 @@ const ProdDetail = props => {
                 <WhiteWrapper>
                     <div className="prodDetail">
                         <div className="productInfo">
+                            <div className="imgContainer"><img className="image" src={productDescription.picture} alt="" /></div>
                             <h1 className="title">{productDescription.title}</h1>
                             <p className="conditions"><span>{productDescription.condition === 'new' ? 'Nuevo' : 'Usado'}</span> | <span>{productDescription.sold_quantity} Vendidos</span></p>
-                            <p className="price">$ {productDescription.price.amount} {productDescription.price.currency}</p>
+                            <p className="price">$ {productDescription.price.amount}</p>
                             <button className="purchaseBtn">Comprar</button>
                         </div>
                         <div className="productDesc">

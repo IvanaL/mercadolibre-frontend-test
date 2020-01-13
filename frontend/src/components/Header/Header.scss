@@ -12,7 +12,7 @@
 }
 
 .Header{
-    //background-color: #fff159;
+    background-color: #fff159;
     padding: 8px 0;
     >.container {
         display: flex;
@@ -26,12 +26,13 @@
 }
 
 .logoLink{
-    //background: url('../../assets/images/Logo_ML.png') center center no-repeat;
+    background: url('../../assets/images/Logo_ML.png') center center no-repeat;
     background-size: contain;
     display: block;
     text-indent: -9999px;
-    width: 90px;
+    width: 50px;
     height: 30px;
+    margin-right: 10px;
 }
 
 .form-control{
@@ -56,7 +57,7 @@
         top: 0;
         right: 0;
         bottom: 0;
-        background-color: #aaaaaa;
+        background-color: #e0e0e0;
         width: 40px;
         appearance: none;
         -webkit-appearance: none;
@@ -79,5 +80,11 @@ form{
                 border: 1px solid #ff0000;
             }
         }  
+    }
+}
+
+@media (min-width: 768px) {
+    .logoLink {
+        width: 90px;
     }
 }

@@ -2,12 +2,16 @@
     display: flex;
     flex-direction: column;
     padding: 15px;
+    margin-bottom: 30px;
 
     .productInfo {
-        order: 2;
         flex: 1;
         display: flex;
         flex-direction: column;
+        margin-bottom: 30px;
+        .imgContainer{
+            display: flex;
+        }
     }
     
     .title {
@@ -56,13 +60,14 @@
     }
     
     .productDesc {
-        order: 1;
         flex: 2;
-        margin: 0 32px 32px 32px;
+        margin-bottom: 30px;
+        .imgContainer {
+            display: none;
+        }
     }
     
     .imgContainer {
-        display: flex;
         justify-content: center;
         margin-bottom: 3em;
     }
@@ -95,7 +100,17 @@
         flex-direction: row;
         flex-wrap: wrap;
         .productDesc{
-            margin: 15px 32px 0 0;
+            margin: 15px 32px 32px 0;
+            order: 1;
+            .imgContainer{
+                display: flex;
+            }
+        }
+        .productInfo{
+            order: 2;
+            .imgContainer{
+                display: none;
+            }
         }
     }
     
