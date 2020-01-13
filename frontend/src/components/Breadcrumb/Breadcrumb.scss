@@ -1,0 +1,23 @@
+.Breadcrumb{
+    padding: 15px 0;
+    ul{
+        list-style: none;
+        display: flex;
+        li{
+            color: #999999;
+            font-size: 13px;
+            display: flex;
+            span{
+                text-decoration: underline;
+            }
+            &:not(:last-child){
+                &:after{
+                    content: '>';
+                    display: flex;
+                    padding: 0 10px;
+                    text-decoration: none;
+                }
+            }  
+        }
+    }
+}

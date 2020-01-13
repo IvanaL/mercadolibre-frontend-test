@@ -1,0 +1,109 @@
+.prodDetail {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+
+    .productInfo {
+        order: 2;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .title {
+        order: 2;
+        font-weight: 600;
+        text-overflow: ellipsis;
+        color: rgba(0,0,0,.8);
+        font-size: 26px;
+        font-weight: 600;
+        padding-bottom: 8px;
+        line-height: 1.18;
+        padding-right: 10px;
+        margin-top: 16px;
+    }
+    
+    .conditions {
+        order: 1;
+        font-size: 14px;
+        color: #666666;
+        font-weight: 300;
+    }
+    
+    .price {
+        order: 3;
+        margin: 15px 0;
+        color: rgba(0,0,0,.8);
+        font-size: 44px;
+        font-weight: 300;
+        padding-bottom: 8px;
+        line-height: 1.18;
+    }
+    
+    .purchaseBtn {
+        order: 4;
+        background: rgb(52, 131, 250);
+        cursor: pointer;
+        color: #ffffff;
+        border: 1px solid rgb(52, 131, 250);
+        border-radius: 4px;
+        padding: 8px 24px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1;
+        height: 48px;
+        margin-right: 16px;
+    }
+    
+    .productDesc {
+        order: 1;
+        flex: 2;
+        margin: 0 32px 32px 32px;
+    }
+    
+    .imgContainer {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3em;
+    }
+    
+    .image {
+        max-width: 50%;
+    }
+    
+    .descriptionTitle {
+        color: rgb(51, 51, 51);
+        font-size: 24px;
+        font-weight: 400;
+        padding-bottom: 24px;
+    }
+    
+    .descriptionText {
+        color: rgb(51, 51, 51);
+        font-weight: 400;
+        font-size: 16px;
+    }
+}
+
+
+@media (min-width: 576px) {
+
+}
+  
+@media (min-width: 768px) {
+    .prodDetail {
+        flex-direction: row;
+        flex-wrap: wrap;
+        .productDesc{
+            margin: 15px 32px 0 0;
+        }
+    }
+    
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+
+}

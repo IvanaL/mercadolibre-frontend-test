@@ -1,0 +1,83 @@
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #b5b5b5;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: #b5b5b5;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: #b5b5b5;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: #b5b5b5;
+}
+
+.Header{
+    //background-color: #fff159;
+    padding: 8px 0;
+    >.container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .searchBox{
+        flex: 1;
+        margin: 0 auto;
+    }
+}
+
+.logoLink{
+    //background: url('../../assets/images/Logo_ML.png') center center no-repeat;
+    background-size: contain;
+    display: block;
+    text-indent: -9999px;
+    width: 90px;
+    height: 30px;
+}
+
+.form-control{
+    position: relative;
+    .custom-control{
+        color: #333333;
+        font-size: 16px;
+        height: 32px;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 5px 6px;
+        box-sizing: border-box;
+        border-radius: 2px;
+        border: none;
+        outline: none;
+    }
+}
+
+.addon{
+    button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #aaaaaa;
+        width: 40px;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        border: 0;
+        cursor: pointer;
+        border-radius: 0 2px 2px 0;
+        border: none;
+        outline: none;
+        img{
+            max-width: 20px;
+        }
+    }
+}
+
+form{
+    &.error{
+        .form-control{
+            .custom-control{
+                border: 1px solid #ff0000;
+            }
+        }  
+    }
+}

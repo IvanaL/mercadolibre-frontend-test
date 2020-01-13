@@ -1,0 +1,55 @@
+.prodsContent{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    padding: 21px 50px 16px 15px;
+    text-decoration: none;
+    position: relative;
+    &:not(:last-child){
+        &:after {  
+            content: '';
+            position: absolute;
+            bottom: 0;
+            height: 1px;
+            width: 100%;
+            left: 0;
+            border-bottom: 1px solid #eee;
+        }        
+    }
+    .prodText{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 15px;
+        color: #000;
+        .price{
+            font-size: 18px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .priceDecimal {
+            font-size: 12px;
+            font-weight: 600;
+            height: 20px;
+            line-height: 1;
+            position: relative;
+            top: -8px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .title{
+            font-size: 20px;
+            color: #333333;
+            line-height: 1.2;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+    }
+}
+
+.textError{
+    color: #333333;
+    font-size: 15px;
+    padding: 32px;
+}
